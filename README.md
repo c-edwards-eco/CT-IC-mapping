@@ -41,7 +41,10 @@ The 2022 aquatic life use assessments are displayed to demonstrate the relations
 ### Mapmaking Process
 
 Based upon the earlier work we did symbolizing roads, I knew that I wanted to symbolize the Strahler order of CT streams. The Strahler number is a way of defining stream size based on the hierarchy of its tributaries. 
-Initial stream nodes are assigned a value of 1. The conjunction of two 1 nodes creates a 2 node, and so on. ![Strahler diagram](/graphics/Strahler.png)
+Initial stream nodes are assigned a value of 1. The conjunction of two 1 nodes creates a 2 node, and so on. 
+
+![Strahler diagram](/graphics/Strahler.png)
+
 I asked my supervisor at work if we had any datasets that included the Strahler order for CT streams, and she provided me with a dataset that included both stream lines and their individual catchments with associated data.
 One of the parameters associated with each catchment was impervious cover percentage. Because this parameter is strongly predictive of stream quality and has been extensively studied, I decided that I wanted to map impervious cover in watershed catchments
 and at least one other parameter.
