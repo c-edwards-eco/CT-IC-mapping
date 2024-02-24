@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset=utf-8 />
+	<title>MAP 671 Final Project</title>
+	<meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css" />
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			background: #202e8e;
+			font-family: 'Open Sans', sans-serif;
+			font-weight: 400;
+			color: black;
+		}
+
+		section {
+			width: 960px;
+			background: white;
+			margin: 20px auto;
+			padding: 20px;
+			border-width: 2px;
+			border-color: black;
+		}
+
+		h1 {
+			font-family: 'Open Sans', sans-serif;
+			font-weight: 300;
+			font-size: 2.5em;
+			letter-spacing: .04em;
+			text-transform: uppercase;
+		}
+
+		h2 {
+			font-family: 'Open Sans', sans-serif;
+			font-weight: 700;
+			color: black;
+			font-size: 1.1em;
+			letter-spacing: .04em;
+			text-align: right;
+		}
+
+		h3 {
+			font-family: 'Open Sans', sans-serif;
+			font-weight: 700;
+			color: black;
+			font-size: 1.0em;
+			letter-spacing: .04em;
+		}
+
+		p {
+			font-size: 1em;
+			line-height: 1.5em;
+			text-align: justify;
+		}
+
+		a {
+			color: #005daa;
+			text-decoration: none;
+		}
+
+		a:hover {
+			text-decoration: underline;
+		}
+
+		ul {
+			padding-left: 20px;
+		}
+
+		#map {
+			width: 100%;
+			margin: 0px auto;
+		}
+		
+		#legend {
+			float:right;
+			margin: 25px;
+		}
+
+		.max-width-img {
+			width: 100%;
+		}
+
+	</style>
+</head>
+
+<body>
+	<section>
+		<div id='map'>
+			<img src="graphics/final_map.png" class="max-width-img" alt="Final map version">
+		</div>
+		<a href="graphics/final_map_highres.png">High resolution version</a>
+
+		<h1>CT Impervious Cover, Canopy Cover, and Water Quality Impairments</h1>
+		<h2>Created by: Chloe Edwards</h2>
+		
+		<h3>About this map</h3>
+		<p><img src="graphics/legend.PNG" width = 350px id = "legend">
+			This map shows the watersheds within the state of Connecticut symbolized according to their impervious cover percentage and canopy cover percentage. Stream width is scaled to Strahler order, and streams that are not currently supporting
+			full aquatic life use are highlighted in red. Canopy cover symbology is limited to only watershed catchments with less than 10% impervious cover.
+			<br><br>
+			Impervious cover has been found to degrade stream quality when watersheds contain more that 10% impervious cover, while watersheds with greater than 20-25% impervious cover are unlikely to support aquatic life.
+			Conversely, watersheds with greater than 65% canopy cover have been found to protect healthy waters.
+			<br><br>
+			This map demonstrates the relationship between watershed characteristics and evaluated water quality. Additionally, it also highlights watersheds within Connecticut that are nearing land cover thresholds
+			that may lead to degraded water quality. Watersheds in the 5-10% impervious cover range with less than 65% canopy cover may be particularly vulnerable to reduced water quality. 
+
+			
+		
+		<h3>Map creation process</h3>
+		
+		<p>
+			Map created using QGIS Version 3.34.2. Connecticut catchment basins with impervious cover percentage and stream flow lines retrieved from internal <a href = "https://portal.ct.gov/DEEP/Water/Inland-Water-Monitoring/Water-Quality-Monitoring-Program">CT DEEP Water Monitoring Program</a> data.
+			Connecticut lakes, ponds, and ocean polygons retrieved from the <a href = "https://geodata.ct.gov/maps/9a8ee1e074df4c1c9aacd53d4f045750">CT Geodata Portal</a>.
+			Impaired river and stream segments retrieved from the <a href = "https://portal.ct.gov/DEEP/Water/Water-Quality/Water-Quality-305b-Report-to-Congress">2022 Integrated Water Quality Report to Congress</a>.
+			Canopy cover raster data retrieved from <a href = "https://coast.noaa.gov/digitalcoast/data/ccaphighres.html">NOAA</a>. 
+			Shapefiles transformed to EPSG:2234 as needed. 
+			<br><br>View the full data analysis and map creation process on <a href="https://github.com/c-edwards-eco">Github</a>.
+		</p>
+		<hr>
+		<a href="https://uky-gis.github.io"><img width="20%"
+				src="https://uky-gis.github.io/graphics/logo-color-400px.png"
+				alt="University of Kentucky Geography"></a>
+		<a href="https://newmapsplus.as.uky.edu"><img width="15%"
+				src="https://newmapsplus.as.uky.edu/sites/default/files/NMP%20Logo.png" alt="New Maps Plus"></a>
+		<a href = "https://portal.ct.gov/DEEP/Water/Inland-Water-Monitoring/Water-Quality-Monitoring-Program"><img width="25%"
+			src="https://deepct.qscend.mygovcenter.com/uploads/cms/images/MicrosoftTeams-image-1671040477175-1671040479270.png"
+			alt="Connecticut Department of Energy and Environmental Protection"></a></a>		
+
+	</section>
+</body>
+
+</html>
