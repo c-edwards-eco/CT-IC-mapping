@@ -71,6 +71,8 @@ I decided that I was happy with visualizing these parameters and began to fine-t
 
 ![Third map](/graphics/progress_3.png)
 
+After finishing the static map option, I decided that this map and associated web page would really be enhanced by making it zoomable. I made an additional map layout with no title and legend items and exported it as a georeferenced TIFF. I then used the gdal2tiles tool within QGIS to export the map as tiles at several zoom levels. I modified the zoomable map code from Module 3.2 to create an additional html file with the zoomable map. I then replaced the static map image on the webpage with the zoomable map and updated the high resolution link to be a link to the static version. 
+
 ### Map summary
 
 Overall, the relationship between impervious cover and stream water quality is very clear based upon this map. It additionally highlights areas that may be highly vulnerable to degradation - e.g. watersheds in the 5-10% impervious cover range that are also close to falling below the canopy cover threshold of 65%. One important takeaway could be the importance of meeting housing and development needs within areas that already have a high impervious cover percentage and avoiding developing areas that are currently maintaining healthy watersheds. 
