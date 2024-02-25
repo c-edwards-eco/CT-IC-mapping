@@ -80,4 +80,4 @@ Overall, the relationship between impervious cover and stream water quality is v
 ## Final Project Link
 
 
-Please view the [final map online](https://c-edwards-eco.github.io/map671final).
+Please view the [final map online](https://c-edwards-eco.github.io/CT-IC-mapping).
