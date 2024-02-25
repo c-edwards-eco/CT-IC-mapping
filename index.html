@@ -70,20 +70,12 @@
 		ul {
 			padding-left: 20px;
 		}
-
-		#map {
-			width: 100%;
-			margin: 0px auto;
-		}
 		
 		#legend {
 			float:right;
 			margin: 25px;
 		}
 
-		.max-width-img {
-			width: 100%;
-		}
 
 	</style>
 </head>
@@ -97,21 +89,22 @@
 		<hr>
 		<h3>About this map</h3>
 		<p><img src="graphics/legend.PNG" width = 350px id = "legend">
+			Impervious cover has been found to degrade stream quality when watersheds contain more than 10% total impervious cover, while watersheds with greater than 20-25% impervious cover are unlikely to support aquatic life.
+			On the other hand, watersheds with greater than 65% canopy cover protect healthy waters.
+			<br><br>
 			This map shows the watersheds within the state of Connecticut symbolized according to their impervious cover percentage and canopy cover percentage. Stream width is scaled to Strahler order, and streams that are not currently supporting
 			full aquatic life use are highlighted in red. Canopy cover symbology is limited to only watershed catchments with less than 10% impervious cover.
 			<br><br>
-			Impervious cover has been found to degrade stream quality when watersheds contain more that 10% impervious cover, while watersheds with greater than 20-25% impervious cover are unlikely to support aquatic life.
-			Conversely, watersheds with greater than 65% canopy cover have been found to protect healthy waters.
-			<br><br>
 			This map demonstrates the relationship between watershed characteristics and evaluated water quality. Additionally, it also highlights watersheds within Connecticut that are nearing land cover thresholds
-			that may lead to degraded water quality. Watersheds in the 5-10% impervious cover range with less than 65% canopy cover may be particularly vulnerable to reduced water quality. 
+			that may lead to degraded water quality. Watersheds in the 5-10% impervious cover range with less than 65% canopy cover may be vulnerable to future water quality issues. 
 
 			
 		
 		<h3>Map creation process</h3>
 		
 		<p>
-			Map created using QGIS Version 3.34.2. Connecticut catchment basins with impervious cover percentage and stream flow lines retrieved from internal <a href = "https://portal.ct.gov/DEEP/Water/Inland-Water-Monitoring/Water-Quality-Monitoring-Program">CT DEEP Water Monitoring Program</a> data.
+			Map created using QGIS Version 3.34.2 and made interactable with the gdal2tiles tool. Connecticut catchment basins with impervious cover percentage and stream flow lines retrieved from internal 
+			<a href = "https://portal.ct.gov/DEEP/Water/Inland-Water-Monitoring/Water-Quality-Monitoring-Program">CT DEEP Water Monitoring Program</a> data.
 			Connecticut lakes, ponds, and ocean polygons retrieved from the <a href = "https://geodata.ct.gov/maps/9a8ee1e074df4c1c9aacd53d4f045750">CT Geodata Portal</a>.
 			Impaired river and stream segments retrieved from the <a href = "https://portal.ct.gov/DEEP/Water/Water-Quality/Water-Quality-305b-Report-to-Congress">2022 Integrated Water Quality Report to Congress</a>.
 			Canopy cover raster data retrieved from <a href = "https://coast.noaa.gov/digitalcoast/data/ccaphighres.html">NOAA</a>. 
