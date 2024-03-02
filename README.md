@@ -51,6 +51,8 @@ and at least one other parameter.
 
 In the first pass of my map, I began by symbolizing streams and their catchments according to Strahler order and impervious cover. I chose the impervious cover color thresholds based upon the revised Impervious Cover Model from Schueler et al, 2009.
 
+![Strahler symbology](/graphics/strahler_cat.PNG)
+
 ![First map](/graphics/progress_1.PNG)
 
 However, I knew that impervious cover wasn't the full story. I then began to research additional factors contributing to water quality, one of which is forest canopy cover. Based upon the Impervious Cover Model, watersheds with 10% and greater impervious cover experience some level of water quality impacts. I decided to symbolize canopy cover percentage for the watershed catchments that had less than 10% impervious cover - i.e., those that were not experiencing impacts and could be sensitive to degradation. I created a copy of the catchments shapefile with only the catchments that had less than 10% impervious cover. I wanted to work with a smaller dataset due to the processing power needed for the large raster dataset.
