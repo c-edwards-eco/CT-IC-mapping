@@ -19,7 +19,7 @@ This project was created by Chloe Edwards as part of the UKY New Maps Plus Progr
 * Impaired river and stream segments retrieved from the [2022 Integrated Water Quality Report to Congress](https://portal.ct.gov/DEEP/Water/Water-Quality/Water-Quality-305b-Report-to-Congress).
 * Canopy cover raster retrieved from [NOAA](https://coast.noaa.gov/digitalcoast/data/ccaphighres.html). 
 
-* Initial data projection: EPSG:4326 and EPSG:2234
+* Input data set projections: EPSG:4326, EPSG:5070 and EPSG:2234
 * Final map projection: EPSG:2234
 
 ### Project Background
@@ -57,7 +57,9 @@ However, I knew that impervious cover wasn't the full story. I then began to res
 
 I used NOAA's high resolution canopy cover dataset to calculate percent canopy cover for each catchment within Connecticut. Within the raster, I set the values to 0 for absence of canopy and 1 for canopy data. Using the zonal statistics tool, I created two additional columns within the filtered catchments shapefile: a count on the number of pixels, and the sum of the value of the pixels (0 + 1). Because the sum column was only counting canopy cover pixels, this enabled me to calculate the percent canopy cover for each catchment (sum/count) and symbolize the catchments based upon that value.
 
-![Zonal stats](/graphics/zonal.PNG)
+![Zontal stats](/graphics/zonal_stats.PNG)
+
+![Zonal processing](/graphics/zonal.PNG)
 
 Booth 2000 found that 65% canopy cover was supportive of healthy watersheds. I initially symbolized only this value (i.e., transparent for all values <65% and green for all values >65%). I then additionally decided to symbolize catchments with both 65-75% and >75% canopy cover. This was a somewhat arbitrary range chosen to show areas where canopy cover was closer to the threshold of 65% and possibly trending towards falling below that threshold.
 
