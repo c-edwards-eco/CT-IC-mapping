@@ -75,7 +75,7 @@ I decided that I was happy with visualizing these parameters and began to fine-t
 
 ![Third map](/graphics/progress_3.png)
 
-After finishing the static map option, I decided that this map and associated web page would really be enhanced by making it zoomable. I made an additional map layout with no title and legend items and exported it as a georeferenced TIFF. I then used the gdal2tiles tool within QGIS to export the map as tiles at several zoom levels. I modified the zoomable map code from Module 3.2 to create an additional html file with the zoomable map. I then replaced the static map image on the webpage with the zoomable map and updated the high resolution link to be a link to the static version. 
+After finishing the static map option, I decided that this map and associated web page would really be enhanced by making it zoomable. I made an additional map layout with no title and legend items and exported it as a georeferenced TIFF. I then used the gdal2tiles tool within QGIS to export the map as tiles at several zoom levels. I modified the zoomable map code from Module 3.2 to create an additional html file with the zoomable map. I then replaced the static map image on the webpage with the zoomable map and updated the high resolution link to be a link to the static version. I am maintaining both versions because I aesthetically don't like the legend included in the zoomable version as part of the map, so it is included within the webpage and within the static version. 
 
 ### Map summary
 
